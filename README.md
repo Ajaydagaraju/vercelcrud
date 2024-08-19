@@ -34,3 +34,31 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+# Project Overview
+In this project i implment a CRUD operation using next js and postgreSQL. I did not more focus on UI but i write code bignners friendly. 
+Any one who has basic knowled of react js / javascript can understand.
+
+So Let's play......
+
+Here i am describing steb by step process to implement the code at your machine.
+
+## Step 1 
+Create a next js project, push it to you git account and deploye it on Vercel.
+## Step 2
+Create your account on vercel and create a database and create a new table in Data using below Query
+
+CREATE TABLE reviwes (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  text TEXT NOT NULL,
+  ref_product INT NOT NULL,
+);
+
+## Step 3 
+Create backend route (use path - src > app > api > product > [id] > reviews > route.js
+Create path for frontend as well ( use path - src > app > review > page.js & crate a new more path where logic will be writen, in review folder create a review.js file)
+
+## Step 4
+Go through the code and can modify according to your need. After that use/run command "npm run dev"
