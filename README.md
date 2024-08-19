@@ -42,6 +42,24 @@ Any one who has basic knowled of react js / javascript can understand.
 
 So Let's play......
 
+![Project Image](public/images/addnewreview.png)
+
+## Inital View
+
+![Inital View Image](public/images/initial.png)
+
+## Select Review Id and get data based on that Id
+![Select Id Image](public/images/selectinitial.png)
+
+##  Data will shown related to selected review id
+![ Image](public/images/select.png)
+
+## Edit option
+![Edit Review Image](public/images/edit.png)
+
+
+
+
 Here i am describing steb by step process to implement the code at your machine.
 
 ## Step 1 
@@ -56,9 +74,14 @@ CREATE TABLE reviwes (
   ref_product INT NOT NULL,
 );
 
+![Vercel Creatge Table Image](public/images/createtable.png)
+
+
 ## Step 3 
-Create backend route (use path - src > app > api > product > [id] > reviews > route.js
+Create backend route (use path - src > app > api > product > [id] > reviews > route.js )
 Create path for frontend as well ( use path - src > app > review > page.js & crate a new more path where logic will be writen, in review folder create a review.js file)
 
 ## Step 4
 Go through the code and can modify according to your need. After that use/run command "npm run dev"
+
+
