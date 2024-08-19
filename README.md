@@ -84,4 +84,11 @@ Create path for frontend as well ( use path - src > app > review > page.js & cra
 ## Step 4
 Go through the code and can modify according to your need. After that use/run command "npm run dev"
 
+#Task For You
+- Improve UI if required
+- Implement error handling on both frontend and backend part (api)
+- Code Optimize
+
+## Have a Greate Day Enjoy Coding...
+
 
