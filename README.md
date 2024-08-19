@@ -74,7 +74,7 @@ CREATE TABLE reviwes (
   ref_product INT NOT NULL,
 );
 
-![Vercel Creatge Table Image](public/images/createtable.png)
+![Vercel Creatge Table Image](public/images/Screenshot.png)
 
 
 ## Step 3 
