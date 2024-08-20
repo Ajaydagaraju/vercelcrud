@@ -148,7 +148,7 @@ const Review = (props) => {
             </FormControl>
             <div>
                 {
-                    data.length ? data.map((d) => {
+                    data?.length ? data.map((d) => {
                         return (
                             <div key={d?.id} style={{ border: '2px solid black', borderRadius: '14px', padding: '12px', margin: "10px", textAlign: "start", color: 'black', display: 'flex', justifyContent:'space-between', alignItems:'center' }} >
                                 <div style={{}} >

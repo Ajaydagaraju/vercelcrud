@@ -9,18 +9,14 @@ export async function POST(req, { params }) {
   const { name, text, ref_product} = await req.json();
   const insertReview = await sql`insert into reviwes (name, text, ref_product) values (${name}, ${text}, ${ref_product})`;
   const reviewspost = await sql`select * from reviwes where ref_product = ${params.id}`;
-
   return Response.json(reviewspost.rows.length > 0 ? reviewspost.rows : null);
-
 };
 
 export async function PUT(req, { params }) {
   const { name, text, ref_product} = await req.json();
   const updateReview = await sql`update reviwes set name = ${name}, text = ${text}, ref_product = ${ref_product} where id = ${params.id}`;
   const reviewspost = await sql`select * from reviwes where ref_product = ${ref_product}`;
-
   return Response.json(reviewspost.rows.length > 0 ? reviewspost.rows : null);
-
 };
 
 
