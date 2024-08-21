@@ -17,7 +17,7 @@ const Review = (props) => {
     const [editMode, setEditMode] = useState(false);
     const [editId, setEditId] = useState("")
     const refValue = useRef("");
-    console.log("ref value", refValue)
+
     const getData = (e) => {
         const selectedValue = e.target.value;
         refValue.current = selectedValue
@@ -153,9 +153,9 @@ const Review = (props) => {
                             <div key={d?.id} style={{ border: '2px solid black', borderRadius: '14px', padding: '12px', margin: "10px", textAlign: "start", color: 'black', display: 'flex', justifyContent:'space-between', alignItems:'center' }} >
                                 <div style={{}} >
 
-                                    <p>Conected with : {d?.ref_product}</p>
                                     <h2>{d?.name}</h2>
                                     <p>{d?.text}</p>
+                                    <p>Review Reference : {d?.ref_product}</p>
                                 </div>
                                 <div style={{}} >
                                     <Stack direction="column" spacing={2}>
