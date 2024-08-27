@@ -49,17 +49,12 @@ const Review = (props) => {
             })
     };
 
-
-
     const handleFormSubmit = (e) => {
-
         e.preventDefault();
-
         const payload = { name, text, ref_product };
         setLoading(true)
         const method = editMode ? "PUT" : "POST";
         const url = editMode ? `/api/product/${editId}/reviews` : `/api/product/${ref_product}/reviews`;
-
         fetch(url, {
             method,
             body: JSON.stringify(payload),
@@ -103,7 +98,6 @@ const Review = (props) => {
     }
 
     const handleDelete = (id) => {
-
         setLoading(true)
         fetch(`/api/product/${id}/reviews`, {
             method: 'DELETE',
